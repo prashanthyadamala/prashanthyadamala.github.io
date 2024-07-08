@@ -13,21 +13,25 @@ With strong communication skills, I work closely with stakeholders to define the
 
 I look forward to connecting with you to explore the world of data and helping people solve problems.
 
+Why data analysis? 
+======
+Analysis based on data is the closest thing that we have that can have the ‘truth’ mark stamped onto it. In a world where misinformation is rampant, information backed up by clean data is extremely important to making good decisions. I want to be able to use data to tell stories based on truth to help society and companies to move humanity forward. 
+
+
 How I got into Data Analytics
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I feel that my love for data was always preset. Whenever my friends or peers have made ridiculous claims, I am that guy in the corner asking, “So where is the data that backs it up?” 
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+In my Master’s degree when studying to be a manufacturing engineer at UNSW Sydney, I was dealing with a large set of data (not just a few points or a graph) to find which of two components was more reliable and cost-effective. I visualised the data using different graphs and charts to finally come to a conclusion on which was the better part.
 
-Education History
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Once I was done with the project, I realized that there was no way I would have come to a reliable solution if I had to sift through all that data without the help of these data analysis tools. This got my interest peeked. I then went on to work with the PVCESE department at UNSW to find data-driven solutions to raise the visibility of the “Educational Technology support options” provided.
+
+When I completed my master’s degree I started to naturally look for work in my field. It was a couple of years later when I started the “Google Data Analytics Professional Certificate” on Coursera as I love learning new things and I had splurged on the annual plan so had to do something with it. I was immediately hooked! The course was a great introduction to the world of data analytics, the data analyst’s way of thinking, and the vast number of tools that can help you along with my first project. 
+
+I immediately followed this up by learning Microsoft’s Power BI and fell in love with its functionality and intuitiveness. I went on to take the Microsoft PL-300 exam to become a “Microsoft Certified: Power BI Data Analyst Associate.” So, here I am now, working with data that I find interesting and solving real-world problems. You can have a look at some of these projects in my portfolio tab.
 
 Interests
 ======
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+In my free time, you might catch me reading getting lost in a science-fiction or fantasy novel. Being a guy from the countryside, I enjoy (maybe enjoyed, need to get back into it) going for jogs and taking in the nature around me. Listening to music and playing a little bit of guitar (I'm not the best at it) is something that I enjoy. 
+
+In the future, I would love to learn how to surf well and glide on the waves of the Australian beaches. I was hooked after I went for my first few lessons. To feel the chaos and power under your feet with the refreshing sea breeze blasting in your face. 
