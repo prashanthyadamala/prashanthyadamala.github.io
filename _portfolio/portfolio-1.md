@@ -1,6 +1,6 @@
 ---
 title: "Portfolio item number 1"
-excerpt: "Analysed 400+ LinkedIn data analyst job postings in Australia using Power BI visualizations to provide insights into the current job market.<br/><img src='/images/LinkedIn-image-tile.png'>"
+excerpt: "Analysed 400+ LinkedIn data analyst job postings in Australia using Power BI visualizations to provide insights into the current job market.<br/><img src='/images/LinkedIn-image-tile.png' width="500" height="300">"
 collection: portfolio
 ---
 
