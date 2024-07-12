@@ -34,7 +34,4 @@ Data Analysis and Visualization
 ------
 The data was then aggregated and visualized using DAX measures and charts in the form of a professional Power BI report. The report can be seen below after logging into your Microsoft Power BI account. If you do not have a Power BI account, there will be images of the report along with visualizations with the following writeup.
 
-<iframe title="LinkedIn_data_analyst_jobs" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d7a58fac-ec19-41f3-9b6f-4b77d538879c&autoAuth=true&ctid=a8e716d0-a9d2-4b2b-b1e2-3711505feb2e" frameborder="1" allowFullScreen="false"></iframe>
-
-------
-<iframe title="LinkedIn_data_analyst_jobs" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiN2EyOGM1YTctOWFiNS00ZTRmLWFlODMtZDkzMDI0MzlkNTY1IiwidCI6ImE4ZTcxNmQwLWE5ZDItNGIyYi1iMWUyLTM3MTE1MDVmZWIyZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="LinkedIn_data_analyst_jobs" width="800" height="486" src="https://app.powerbi.com/reportEmbed?reportId=d7a58fac-ec19-41f3-9b6f-4b77d538879c&autoAuth=true&ctid=a8e716d0-a9d2-4b2b-b1e2-3711505feb2e" frameborder="1" allowFullScreen="false"></iframe>
