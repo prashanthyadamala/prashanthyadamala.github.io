@@ -1,6 +1,6 @@
 ---
 title: "Basket Analysis of Adventure Works"
-excerpt: "This project aims to identify the items bought most frequently together at the Adventure Works store. <br/><img src='/images/Basket-Main.jpg' width='800' height='480' frameborder="2">"
+excerpt: "This project aims to identify the items bought most frequently together at the Adventure Works store. <br/><img src='/images/Basket-Main.jpg' width='800' height='480' frameborder='2'>"
 collection: portfolio
 ---
 
