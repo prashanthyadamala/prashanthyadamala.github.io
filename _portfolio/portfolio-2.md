@@ -1,6 +1,6 @@
 ---
 title: "Basket Analysis of Adventure Works"
-excerpt: "This project aims to identify the items bought most frequently together at the Adventure Works store. <br/><img src='/images/Basket-Main.jpg' width='800' height='480'>"
+excerpt: "This project aims to identify the items bought most frequently together at the Adventure Works store. <br/><img src='/images/Basket-Main.jpg' width='800' height='480' frameborder="2">"
 collection: portfolio
 ---
 
@@ -22,10 +22,10 @@ To perform the market basket analysis, the data has to be transformed to have a 
 
 Basket Analysis =<br/>
 FILTER(<br/>
-&nbsp;    CROSSJOIN(<br/>
-&nbsp;&nbsp;        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 1", 'Product'[Name]),<br/>
-&nbsp;&nbsp;        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 2", 'Product'[Name])<br/>
-&nbsp;        ), [Product 1] <> [Product 2]<br/>
+&emsp;    CROSSJOIN(<br/>
+&emsp;&emsp;        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 1", 'Product'[Name]),<br/>
+&emsp;&emsp;        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 2", 'Product'[Name])<br/>
+&emsp;        ), [Product 1] <> [Product 2]<br/>
 )<br/>
 
 
@@ -40,23 +40,24 @@ var prod1 = 'Basket Analysis'[Product 1]<br/>
 var prod2 = 'Basket Analysis'[Product 2]<br/>
 <br/>
 var prod1Trasactions =<br/>
-&nbsp;    SELECTCOLUMNS(
-&nbsp;&nbsp;        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod1),<br/>
-&nbsp;&nbsp;        "SalesOrderID", SalesOrderDetail[SalesOrderID]<br/>
-&nbsp;    )<br/>
+&emsp;    SELECTCOLUMNS(
+&emsp;&emsp;        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod1),<br/>
+&emsp;&emsp;        "SalesOrderID", SalesOrderDetail[SalesOrderID]<br/>
+&emsp;    )<br/>
 <br/>
 var prod2Trasactions =<br/>
-&nbsp;    SELECTCOLUMNS(<br/>
-&nbsp;&nbsp;        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod2),<br/>
-&nbsp;&nbsp;        "SalesOrderID", SalesOrderDetail[SalesOrderID]<br/>
- &nbsp;   )<br/>
+&emsp;    SELECTCOLUMNS(<br/>
+&emsp;&emsp;        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod2),<br/>
+&emsp;&emsp;        "SalesOrderID", SalesOrderDetail[SalesOrderID]<br/>
+&emsp;   )<br/>
 <br/>
 var combinedTrasactions =<br/>
-&nbsp;    INTERSECT(prod1Trasactions, prod2Trasactions)<br/>
+&emsp;    INTERSECT(prod1Trasactions, prod2Trasactions)<br/>
 <br/>
 RETURN<br/>
-&nbsp;    COALESCE(COUNTROWS(combinedTrasactions), 0)<br/>
+&emsp;    COALESCE(COUNTROWS(combinedTrasactions), 0)<br/>
 <br/>
+
 Data Modeling
 ------
 A relationship was created between the SalesOrderDetail and the Product table on the product name of each of the tables with a many-to-one cardinality and single cross-filter direction. The Basket Analysis table doesn’t have any relationship with the rest of the tables. Its relationships are established using DAX code when creating it. The graphical representation of the data model is shown below:
@@ -69,7 +70,7 @@ Data Visualization and Analysis
 ------
 The data was then aggregated and visualized using DAX measures and charts in the form of a professional Power BI report that can be seen below:
 
-<iframe title="AdventureWorks_Basket_Analysis" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDI2OTU2YTYtYzQyZS00ZjBlLWFmYjktYTQ4ZGM3ZTY0NDNmIiwidCI6ImE4ZTcxNmQwLWE5ZDItNGIyYi1iMWUyLTM3MTE1MDVmZWIyZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="AdventureWorks_Basket_Analysis" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDI2OTU2YTYtYzQyZS00ZjBlLWFmYjktYTQ4ZGM3ZTY0NDNmIiwidCI6ImE4ZTcxNmQwLWE5ZDItNGIyYi1iMWUyLTM3MTE1MDVmZWIyZSJ9" frameborder="1" allowFullScreen="true"></iframe>
 
 The report shown has two main visualizations. The left visualization is a bar chart that shows the top 10 best-selling products at Adventure Works. It isn’t affected by any of the filters on the page.
 
