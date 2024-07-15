@@ -12,13 +12,15 @@ redirect_from:
 
 EDUCATION
 ======
-Master of Engineering Science (Manufacturing Engineering and Management)
-Sep 2019 – Sep 2021
-UNSW Sydney | WAM: 83.5
 <br>
-Bachelor of Engineering (Mechanical Engineering)					                 
-Jul 2014 – May 2018
-Manipal Institute of Technology | CGPA of 8.62			                 
+
+Master of Engineering Science (Manufacturing Engineering and Management)<br>
+Sep 2019 – Sep 2021<br>
+UNSW Sydney | WAM: 83.5<br>
+<br>
+Bachelor of Engineering (Mechanical Engineering)	<br>				                 
+Jul 2014 – May 2018<br>
+Manipal Institute of Technology | CGPA of 8.62	<br>	                 
 <br>
 
 PROJECTS
@@ -69,6 +71,7 @@ Exploratory Data Analysis and Customer Segmentation Analysis - Bellabeat Case St
 - Visualised the data using R Studio using ggplot, dplyr and tidyverse libraries to perform an exploratory analysis of the data. 
 - Segmented the customers-based average daily steps and average daily device usage to explore opportunities to improve market share. 
 <br>
+<br>
 
 WORK EXPERIENCE
 ======
@@ -81,14 +84,16 @@ University of New South Wales (UNSW Sydney)
 <br>
 - Formatted, analysed and visualized the data in Microsoft Excel using data collected from over 100 student responses through surveys and interviews to gain insights into experience with ET support.
 - Presented the PVCESE team at UNSW with data-driven recommendations to improve awareness and visibility of ET support options for students at UNSW.
-- Deployed changes (based on recommendations) showed an 85% month-on-month increase in interactions with ET support resources.
+- Deployed changes (based on recommendations) showed an 85% month-on-month increase in interactions with ET support resources.<br>
+<br>
 <br>
 
-CERTIFICATIONS
+Certifications
 ======
 - Microsoft Certified: Power BI Data Analyst Associate (PL-300).
 - Google Data Analytics Professional Certificate, Coursera.
 - Microsoft Power BI Data Analyst Specialization, Coursera.
+<br>
 <br>
 
 Skills
