@@ -21,15 +21,15 @@ SQL Server:
 The data cleaning was done using both SQL Server and Power BI’s Power Query. The steps taken in each of the tools are given below:
 
 - Append the three tables (each for a different year) into one table. 
-&emsp;- Some of the data types had to be changed to accommodate the append. 
-&emsp;- The column names and data types were cleaned and matched in all three to perform the append. 
-&emsp;- The order of the columns was also maintained in all three tables. 
+  - Some of the data types had to be changed to accommodate the append. 
+  - The column names and data types were cleaned and matched in all three to perform the append. 
+  - The order of the columns was also maintained in all three tables. 
 - Added Index column (order id) to have a primary key for the fact table. 
 - Replaced ‘NULL’ values with 0 from the following columns:
-&emsp;- Children
-&emsp;- Babies
-&emsp;- Company
-&emsp;- Agent
+  - Children
+  - Babies
+  - Company
+  - Agent
 - Cleaned the ‘reservation_status_dates’ column (some values had dates that were outside the time range, thus they were converted to dates of the year of the dataset as this was an error due to a bug.
 - Values in the child and babies column which had a high number of children were replaced after finding out that they were typos so “10” was converted to 1 and 9 to 0 due to the proximity of the keys to each other.
 - Could add a country dimension to have full forms of the names that exist in the factsheet.
@@ -97,8 +97,8 @@ The measure used to calculate the meal revenue is given below:
 
 Meal Revenue = <br/>
 &emsp;CALCULATE(<br/>
-&emsp;&emsp;SUMX('Hotel', ('Hotel'[Adults] + Hotel[Children])<br/>
-&emsp;&emsp;&emsp;*('Hotel'[Week Nights]+'Hotel'[Weekend Nights]) *<br/>
+&emsp;&emsp;SUMX('Hotel', ('Hotel'[Adults] + Hotel[Children])*<br/>
+&emsp;&emsp;&emsp;('Hotel'[Week Nights]+'Hotel'[Weekend Nights])*<br/>
 &emsp;&emsp;&emsp;RELATED('Meal Cost'[Cost])), 'Hotel'[Order Status Cancelled] = "0"<br/>
 &emsp;)<br/>
 <br/>
@@ -155,7 +155,7 @@ Customers without Children =<br/>
 
 The map visualization shows the countries where the customers are with the majority of them coming from Western Europe or Brazil. The Donut chart shows the fraction of customers who do not get the room they booked. The map visualization cannot be seen in the embedded Power BI report above thus an image of the map visual can be seen below:
 
-<img src='/images/hotel_map.png' width='800' height='480'> 
+<img src='/images/hotel-map.png' width='800' height='480'> 
 
 Limitations of the Data
 ------
@@ -175,6 +175,6 @@ Hotel-related
 - Provide information on the capacity of each room type to check the fill rates over time. 
 
 References:
-
+------
 1. List of country codes by alpha-2, alpha-3 code (ISO 3166). (n.d.). https://www.iban.com/country-codes
 2. Holland, G. (2023, December 29). Where to find data? AbsentData. https://absentdata.com/data-analysis/where-to-find-data/
