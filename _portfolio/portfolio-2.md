@@ -20,13 +20,13 @@ The data is then imported into Power BI. In Power Query the SalesOrderDetail tab
 
 To perform the market basket analysis, the data has to be transformed to have a table with two columns containing all possible combinations of the products. This is achieved using the following DAX code:
 
-Basket Analysis =
-FILTER(
-    CROSSJOIN(
-        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 1", 'Product'[Name]),
-        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 2", 'Product'[Name])
-        ), [Product 1] <> [Product 2]
-)
+Basket Analysis =<br/>
+FILTER(<br/>
+&nbsp;    CROSSJOIN(<br/>
+&nbsp;&nbsp;        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 1", 'Product'[Name]),<br/>
+&nbsp;&nbsp;        SELECTCOLUMNS(VALUES('Product'[Name]), "Product 2", 'Product'[Name])<br/>
+&nbsp;        ), [Product 1] <> [Product 2]<br/>
+)<br/>
 
 
 After the two columns are generated using the Product table’s Name column, the next step is to create a column with a combination of both names as the primary key to this table. This is done using the following DAX code that just concatenated the two names: 
@@ -35,28 +35,28 @@ Basket Combination = 'Basket Analysis'[Product 1] & " - " & 'Basket Analysis'[Pr
 
 The most important thing is to create the number of occasions that the two products are bought together. This is done using the following DAX code below. It creates two temporary tables for each row of products and then uses the INTERSECT function to find the number of orders where both products are bought together.
 
-Prod 1&2 Purchases =
-var prod1 = 'Basket Analysis'[Product 1]
-var prod2 = 'Basket Analysis'[Product 2]
-
-var prod1Trasactions =
-    SELECTCOLUMNS(
-        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod1),
-        "SalesOrderID", SalesOrderDetail[SalesOrderID]
-    )
-
-var prod2Trasactions =
-    SELECTCOLUMNS(
-        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod2),
-        "SalesOrderID", SalesOrderDetail[SalesOrderID]
-    )
-
-var combinedTrasactions =
-    INTERSECT(prod1Trasactions, prod2Trasactions)
-
-RETURN
-    COALESCE(COUNTROWS(combinedTrasactions), 0)
-
+Prod 1&2 Purchases =<br/>
+var prod1 = 'Basket Analysis'[Product 1]<br/>
+var prod2 = 'Basket Analysis'[Product 2]<br/>
+<br/>
+var prod1Trasactions =<br/>
+&nbsp;    SELECTCOLUMNS(
+&nbsp;&nbsp;        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod1),<br/>
+&nbsp;&nbsp;        "SalesOrderID", SalesOrderDetail[SalesOrderID]<br/>
+&nbsp;    )<br/>
+<br/>
+var prod2Trasactions =<br/>
+&nbsp;    SELECTCOLUMNS(<br/>
+&nbsp;&nbsp;        FILTER(SalesOrderDetail, SalesOrderDetail[Product Name] = prod2),<br/>
+&nbsp;&nbsp;        "SalesOrderID", SalesOrderDetail[SalesOrderID]<br/>
+ &nbsp;   )<br/>
+<br/>
+var combinedTrasactions =<br/>
+&nbsp;    INTERSECT(prod1Trasactions, prod2Trasactions)<br/>
+<br/>
+RETURN<br/>
+&nbsp;    COALESCE(COUNTROWS(combinedTrasactions), 0)<br/>
+<br/>
 Data Modeling
 ------
 A relationship was created between the SalesOrderDetail and the Product table on the product name of each of the tables with a many-to-one cardinality and single cross-filter direction. The Basket Analysis table doesn’t have any relationship with the rest of the tables. Its relationships are established using DAX code when creating it. The graphical representation of the data model is shown below:
