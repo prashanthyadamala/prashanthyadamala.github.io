@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Prashanth Yadamala's CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,15 +8,23 @@ redirect_from:
 ---
 
 {% include base_path %}
+<br>
 
 EDUCATION
 ======
-- Master of Engineering Science (Manufacturing Engineering and Management), UNSW Sydney	                               
+Master of Engineering Science (Manufacturing Engineering and Management)
+Sep 2019 – Sep 2021
+UNSW Sydney | WAM: 83.5
 <br>
-- Bachelor of Engineering (Mechanical Engineering), Manipal Institute of Technology					                 
+Bachelor of Engineering (Mechanical Engineering)					                 
+Jul 2014 – May 2018
+Manipal Institute of Technology | CGPA of 8.62			                 
+<br>
 
 PROJECTS
 ======
+<br>
+
 Analysis of LinkedIn Data Analysis Job Postings in Australia - Personal Project
 ------
 (Jun 2024 – Jul 2024)
@@ -60,27 +68,31 @@ Exploratory Data Analysis and Customer Segmentation Analysis - Bellabeat Case St
 - Transformed, merged and cleaned data using Excel and SQL to ensure data integrity using the ROCCC system.
 - Visualised the data using R Studio using ggplot, dplyr and tidyverse libraries to perform an exploratory analysis of the data. 
 - Segmented the customers-based average daily steps and average daily device usage to explore opportunities to improve market share. 
+<br>
 
 WORK EXPERIENCE
 ======
+<br>
+
 Student Project Consultant – PVCESE Education Technology Support
 ------
 (Jun 2021 – Aug 2021)
-
-- University of New South Wales (UNSW Sydney)
+University of New South Wales (UNSW Sydney)
+<br>
 - Formatted, analysed and visualized the data in Microsoft Excel using data collected from over 100 student responses through surveys and interviews to gain insights into experience with ET support.
 - Presented the PVCESE team at UNSW with data-driven recommendations to improve awareness and visibility of ET support options for students at UNSW.
 - Deployed changes (based on recommendations) showed an 85% month-on-month increase in interactions with ET support resources.
+<br>
 
 CERTIFICATIONS
 ======
 - Microsoft Certified: Power BI Data Analyst Associate (PL-300).
 - Google Data Analytics Professional Certificate, Coursera.
 - Microsoft Power BI Data Analyst Specialization, Coursera.
+<br>
 
 Skills
 ======
-<br>
 - SQL (SQL Server, MySQL, BigQuery)
 - Power BI (Power Query, DAX)
 - Excel (VLOOKUP, Pivot Tables, Conditional Formatting)
