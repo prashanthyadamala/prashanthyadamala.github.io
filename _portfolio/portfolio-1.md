@@ -6,7 +6,7 @@ collection: portfolio
 
 Introduction
 ------
-The goal of this project is the analyse the data analyst job postings in Power BI to help me better understand the opportunities available to me during my job hunt. This project would give me an overview of the jobs in a Power BI report as well as narrow down jobs that I want to apply for immediately using filters. The data used in this project was scrapped from LinkedIn Australia using Python in Jupyter Notebooks. To go directly to the Power BI report click <a href="#data_analysis_and_visualization">here</a>.
+The goal of this project is the analyse the data analyst job postings in Power BI to help me better understand the opportunities available to me during my job hunt. This project would give me an overview of the jobs in a Power BI report as well as narrow down jobs that I want to apply for immediately using filters. The data used in this project was scrapped from LinkedIn Australia using Python in Jupyter Notebooks.
 
 Data Collection
 ------
@@ -35,7 +35,7 @@ Data Analysis and Visualization
 The data was then aggregated and visualized using DAX measures and charts in the form of a professional Power BI report. The report can be seen below after logging into your Microsoft Power BI account. If you do not have a Power BI account, there will be images of the report along with visualizations with the following writeup.
 
 <iframe title="LinkedIn_data_analyst_jobs" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiN2EyOGM1YTctOWFiNS00ZTRmLWFlODMtZDkzMDI0MzlkNTY1IiwidCI6ImE4ZTcxNmQwLWE5ZDItNGIyYi1iMWUyLTM3MTE1MDVmZWIyZSJ9" frameborder="1" allowFullScreen="true"></iframe>
-
+<br/>
 The first page contains an overview of the job listings from LinkedIn Australia. The Azure map visual shows the distribution of data analyst job listings across the different states of Australia with the number of listings signified by the size of the bubble. Each bubble also shows the segments of different seniority-level requirements of that particular state. This visualization cannot be viewed in the embedded Power BI report above thus a copy of it is given below.
 
 <img src='/images/LinkedIn-image-map.png' width='800' height='480'>
