@@ -18,7 +18,7 @@ Master of Engineering Science (Manufacturing Engineering and Management)<br>
 Sep 2019 – Sep 2021<br>
 UNSW Sydney | WAM: 83.5<br>
 <br>
-Bachelor of Engineering (Mechanical Engineering)<br>				                 
+Bachelor of Engineering (Mechanical Engineering)				                 
 Jul 2014 – May 2018<br>
 Manipal Institute of Technology | CGPA of 8.62	<br>	                 
 <br>
