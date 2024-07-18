@@ -1,5 +1,5 @@
 ---
-title: "Portfolio item number 4"
+title: "Hotel Data Reporting and Analysis Project using Power BI"
 excerpt: "This project aims to conduct an exploratory analysis of a hotel and resort chain dataset. SQL Server will be used to store, clean and transform the data. 
 The data will be further cleaned and transformed using Power Query and visualized through a Power BI report. <br/>
 <img src='/images/Hotel-Main-2.png' width='800' height='480' frameborder='2'>"
