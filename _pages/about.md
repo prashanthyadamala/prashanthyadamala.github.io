@@ -11,7 +11,7 @@ As a dedicated and detail-oriented Data Analyst, I am passionate about using the
 
 With strong communication skills, I work closely with stakeholders to define the problem. With a focus on the issue, I analyse relevant data to present a strong data-driven narrative using Power BI's reports that provide meaningful insights. 
 
-I look forward to connecting with you to explore the world of data and helping people solve problems.
+I look forward to connecting with you to explore the world of data and help solve problems.
 
 Why data analysis? 
 ======
